@@ -18,7 +18,7 @@ const GetStarted = () => {
           className="p-4 m-4 rounded-lg shadow-[2px_2px_9px] font-eb-garamond"
         />
       </div>
-      <Button text="Sign up" />
+      <Button text="Sign up" color={'white'}/>
     </>
   );
 };

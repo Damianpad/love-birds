@@ -1,5 +1,6 @@
 import Navigation from "./Components/Navigation"
 import Hero from "./Components/Hero"
+import VendorHighlight from "./Components/VendorHighlight"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Navigation />
       <Hero />
+      <VendorHighlight />
     </>
   )
 }

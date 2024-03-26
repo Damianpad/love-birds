@@ -1,4 +1,5 @@
 import logo from "../assets/love_birds.png";
+import Button from "./Button";
 
 const Navigation = () => {
   return (
@@ -24,12 +25,8 @@ const Navigation = () => {
       </ul>
 
       <section>
-        <button className="ml-4 mr-4 pl-3 pr-3 pt-1 pb-1 border border-gray-500 rounded-md text-white bg-mainBlue font-eb-garamond w-40">
-          Login
-        </button>
-        <button className="ml-4 mr-4 pl-3 pr-3 pt-1 pb-1 border border-gray-500 rounded-md text-white bg-mainBlue font-eb-garamond w-40">
-          Sign up
-        </button>
+        <Button text='Login' />
+        <Button text='Sign up'/> 
       </section>
     </div>
   );

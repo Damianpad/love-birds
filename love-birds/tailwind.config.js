@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         mainBlue: "#45556B",
+        cardCream: '#D9D9D9'
       },
       fontFamily: {
         "eb-garamond": ["EB Garamond", "serif"],

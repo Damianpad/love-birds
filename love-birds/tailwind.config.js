@@ -11,7 +11,7 @@ export default {
         "eb-garamond": ["EB Garamond", "serif"],
       },
       backgroundImage: {
-        'hero-pattern': "url('./assets/lb_hero.jpg')",
+        'hero-pattern': "url('./assets/lb_HeroBlue.jpg')",
         'footer-texture': "url('/img/footer-texture.png')",
       },
     },

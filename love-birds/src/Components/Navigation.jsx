@@ -4,9 +4,9 @@ import Button from "./Button";
 const Navigation = () => {
   return (
     <div className="flex justify-around items-center bg-#080707 font-inter">
-      <img src={logo} className="h-44" />
+      <img src={logo} className="phone:h-28 h-44" />
 
-      <ul className="flex justify-between text-mainBlue">
+      <ul className="phone:hidden tablet:hidden flex justify-between text-mainBlue ">
         <li className=" ">
           <a href="#" className="m-4  ">
             Planning Tools
@@ -24,9 +24,9 @@ const Navigation = () => {
         </li>
       </ul>
 
-      <section>
-        <Button text='Login' />
-        <Button text='Sign up'/> 
+      <section className="phone:hidden">
+        <Button text="Login" />
+        <Button text="Sign up" />
       </section>
     </div>
   );

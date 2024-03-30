@@ -3,11 +3,11 @@ import Button from "./Button";
 const GetStarted = () => {
   return (
     <>
-      <div className="flex p-4 flex justify-around w-96 flex-col">
+      <div className=" flex p-4 flex justify-around w-96 flex-col">
         <span className="text-white text-xl m-2 font-eb-garamond flex justify-center items-center">
           Get Started!
         </span>
-        <div className=" flex flex-row justify-center items-center">
+        <div className="phone:flex-col flex flex-row justify-center items-center ">
           <input
             type="text"
             placeholder="Email"

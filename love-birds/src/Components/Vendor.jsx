@@ -2,7 +2,7 @@ import Button from "./Button";
 
 const Vendor = (props) => {
   return (
-    <div className="flex items-center flex-col rounded-xl bg-mainBlue w-1/3 h-64 m-2">
+    <div className="flex items-center flex-col rounded-xl bg-mainBlue laptop:w-1/3 desktop:w-1/3 largeDesktop:w-1/3 h-64 m-2">
       <div className="w-full h-4/5">
         <img
           src={props.image}

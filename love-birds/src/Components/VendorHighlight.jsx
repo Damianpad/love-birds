@@ -8,9 +8,9 @@ import Venue from "../assets/lb_venue.jpg";
 
 const VendorHighlight = () => {
   return (
-    <div className="flex flex-col justify-center items-center p-4 bg-cardCream">
+    <div className="flex flex-col justify-center items-center p-4 bg-cardCream ">
       <h2 className="font-eb-garamond font-bold m-8 text-xl ">Find your perfect vendors</h2>
-      <div className="flex ">
+      <div className="phone:grid phone:grid-cols-2 tablet:grid tablet:grid-cols-2 flex">
         <Vendor
           type="Photographers"
           image={Photographer}

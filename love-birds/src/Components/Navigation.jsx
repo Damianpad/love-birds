@@ -49,7 +49,7 @@ const Navigation = () => {
         </NavLink>
 
         <ul className="phone:hidden tablet:hidden flex justify-between text-mainBlue ">
-          <NavLink to={'vendors'}>
+          <NavLink to={'vendor-search'}>
             <li className="m-4  ">
                 Planning Tools
             </li>

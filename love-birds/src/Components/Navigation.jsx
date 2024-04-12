@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/love_birds.png";
 import Button from "./Button";
 
@@ -10,7 +11,11 @@ const Navigation = () => {
   };
   if (visable) {
     return (
-      <div className={`h-screen flex flex-col transform transition-transform duration-50 ${visable ? 'translate-x-0' : '-translate-x-full' }`} >
+      <div
+        className={`h-screen flex flex-col transform transition-transform duration-50 ${
+          visable ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
         <section className=" flex justify-end">
           <button
             onClick={handleClick}
@@ -27,7 +32,9 @@ const Navigation = () => {
 
         <section className="m-4 p-4 text-mainBlue font-eb-garamond text-2xl">
           <ul className="p-4">
-            <li className="p-4">Planning Tools</li>
+            <li className="p-4">
+              <NavLink to="/">Planning Tools</NavLink>
+            </li>
             <li className="p-4">Vendors</li>
             <li className="p-4">Registry</li>
           </ul>
@@ -37,14 +44,17 @@ const Navigation = () => {
   } else {
     return (
       <div className="flex justify-around items-center bg-#080707 font-inter">
-        <img src={logo} className="phone:h-28 h-44" />
+        <NavLink to={"/"}>
+          <img src={logo} className="phone:h-28 h-44" />
+        </NavLink>
 
         <ul className="phone:hidden tablet:hidden flex justify-between text-mainBlue ">
-          <li className=" ">
-            <a href="#" className="m-4  ">
-              Planning Tools
-            </a>
-          </li>
+          <NavLink to={'vendors'}>
+            <li className="m-4  ">
+                Planning Tools
+            </li>
+          </NavLink>
+
           <li>
             <a href="#" className="m-4">
               Vendors

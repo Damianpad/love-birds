@@ -55,11 +55,11 @@ const Navigation = () => {
             </li>
           </NavLink>
 
-          <li>
-            <a href="#" className="m-4">
-              Vendors
-            </a>
-          </li>
+          <NavLink to={'vendor-search'}>
+            <li className="m-4  ">
+                Vendors
+            </li>
+          </NavLink>
           <li>
             <a href="#" className="m-4">
               Registry

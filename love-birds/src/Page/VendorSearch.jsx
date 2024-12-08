@@ -1,6 +1,6 @@
 import Navigation from "../Components/Navigation";
 import VendorFilter from "../Components/VendorFilter";
-import SearchResults from "../Components/SearchResults";
+import SearchResultsContainer from "../Components/SearchResultsContainer";
 
 const VendorSearch = () => {
   return (
@@ -8,7 +8,7 @@ const VendorSearch = () => {
       <Navigation />
       <div className="phone:inline flex">
         <VendorFilter />
-        <SearchResults />
+        <SearchResultsContainer />
       </div>
     </>
   );

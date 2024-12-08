@@ -16,7 +16,7 @@ const VendorFilter = () => {
       </div>
 
       <FilterCollapse filterName="Vendor" items={vendorList} />
-      <FilterCollapse filterName="Budget" items={budgetRanges} />
+      <FilterCollapse filterName="Budget" items={budgetRanges} slider={true} />
       <FilterCollapse filterName="Location" items={locations} />
       <FilterCollapse filterName="Great Deals" items={greatDeals} />
     </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/love_birds.png";
 import Button from "./Button";
@@ -32,11 +32,12 @@ const Navigation = () => {
 
         <section className="m-4 p-4 text-mainBlue font-eb-garamond text-2xl">
           <ul className="p-4">
-            <li className="p-4">
-              <NavLink to="/">Planning Tools</NavLink>
-            </li>
-            <li className="p-4">Vendors</li>
-            <li className="p-4">Registry</li>
+            <NavLink to={"vendor-search"}>
+              <li className="p-4">Vendors</li>
+            </NavLink>
+            <NavLink to={"wedding-budget"}>
+              <li className="p-4">Budget</li>
+            </NavLink>
           </ul>
         </section>
       </div>
@@ -49,22 +50,13 @@ const Navigation = () => {
         </NavLink>
 
         <ul className="phone:hidden tablet:hidden flex justify-between text-mainBlue ">
-          <NavLink to={'vendor-search'}>
-            <li className="m-4  ">
-                Planning Tools
-            </li>
+          <NavLink to={"vendor-search"}>
+            <li className="m-4  ">Vendors</li>
           </NavLink>
 
-          <NavLink to={'vendor-search'}>
-            <li className="m-4  ">
-                Vendors
-            </li>
+          <NavLink to={"wedding-budget"}>
+            <li className="m-4  ">Budget</li>
           </NavLink>
-          <li>
-            <a href="#" className="m-4">
-              Registry
-            </a>
-          </li>
         </ul>
 
         <section className="phone:hidden">
@@ -72,7 +64,7 @@ const Navigation = () => {
           <Button text="Sign up" />
         </section>
 
-        <section>
+        <section className="hidden tablet:block phone:block">
           <button onClick={handleClick}>Nav</button>
         </section>
       </div>
